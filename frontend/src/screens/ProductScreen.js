@@ -88,10 +88,11 @@ function ProductScreen({ match, history }) {
                   <ListGroup.Item>
                     <Row>
                       <Col>Qty</Col>
-                      <Col xs="auto" className="my-1">
+                      <Col xs="auto" className="my-1 mr-sm-2">
                         <Form.Control
                           as="select"
                           value={qty}
+                          custom
                           onChange={(e) => setQty(e.target.value)}
                         >
                           {[...Array(product.countInStock).keys()].map((x) => (
